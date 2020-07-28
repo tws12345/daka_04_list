@@ -47,18 +47,30 @@
 4. 获取列表中的元素
 
     x = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
-    print(x[0], type(x[0]))  # Monday <class 'str'>
-    print(x[-1], type(x[-1]))  # ['Thursday', 'Friday'] <class 'list'>
-    print(x[-2], type(x[-2]))  # Wednesday <class 'str'>
-    print(x[3:])  # ['Thursday', 'Friday']
-    print(x[-3:])  # ['Wednesday', 'Thursday', 'Friday']
-    print(week[:3])  # ['Monday', 'Tuesday', 'Wednesday']
-    print(week[:-3])  # ['Monday', 'Tuesday']
-    print(week[1:3])  # ['Tuesday', 'Wednesday']
-    print(week[-3:-1])  # ['Wednesday', 'Thursday']
-    print(week[1:4:2])  # ['Tuesday', 'Thursday']
-    print(week[:4:2])  # ['Monday', 'Wednesday']
-    print(week[1::2])  # ['Tuesday', 'Thursday']
+    print(x[0], type(x[0]))  
+    #Monday <class 'str'>
+    print(x[-1], type(x[-1])) 
+    #['Thursday', 'Friday'] <class 'list'>
+    print(x[-2], type(x[-2]))  
+    #Wednesday <class 'str'>
+    print(x[3:])  
+    #['Thursday', 'Friday']
+    print(x[-3:])  
+    #['Wednesday', 'Thursday', 'Friday']
+    print(week[:3])  
+    #['Monday', 'Tuesday', 'Wednesday']
+    print(week[:-3])  
+    #['Monday', 'Tuesday']
+    print(week[1:3])  
+    #['Tuesday', 'Wednesday']
+    print(week[-3:-1])  
+    #['Wednesday', 'Thursday']
+    print(week[1:4:2])  
+    #['Tuesday', 'Thursday']
+    print(week[:4:2])  
+    #['Monday', 'Wednesday']
+    print(week[1::2])  
+    #['Tuesday', 'Thursday']
     print(week[::-1])  
     #['Friday', 'Thursday', 'Wednesday', 'Tuesday', 'Monday']
 
@@ -79,22 +91,17 @@
     x.sort()
     print(x)
     #[123, 213, 456, 789]
-
     x.sort(reverse=True)
     print(x)
     #[789, 456, 213, 123]
-
-
+    
     #获取列表的第二个元素
     def takeSecond(elem):
     return elem[1]
-
-
     x = [(2, 2), (3, 4), (4, 1), (1, 3)]
     x.sort(key=takeSecond)
     print(x)
     #[(4, 1), (2, 2), (1, 3), (3, 4)]
-
     x.sort(key=lambda a: a[0])
     print(x)
     #[(1, 3), (2, 2), (3, 4), (4, 1)]
